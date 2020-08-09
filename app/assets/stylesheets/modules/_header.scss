@@ -21,15 +21,13 @@
       }
   }
   &__top {
-    background-color:white;
-    height: 10px;
-    width: 100vh;
+    background-color: gray;
     &__first-view {
       height: 60vh;
-      &__top-image {
-        height: 60px;
-        width: 50%;
-      }
     }
+      img {
+        height: 100%;
+        width: 100%;
+      }
   }
 }
