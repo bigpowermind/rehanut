@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  get 'contents/index'
+  devise_for :users
+
   root "contents#index"
+  resources :users, only: [:edit, :update]
 end
