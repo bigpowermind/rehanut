@@ -1,0 +1,25 @@
+.Main {
+  height: 100vh;
+  background-color: white;
+  &__feature {
+    color: black;
+    display: flex;
+    &__reha {
+      margin-right: 20px;
+      &__message {
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+    &__nut {
+      &__message {
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+  }
+    img {
+      height: 100%;
+      width: 90%;
+    }
+}
