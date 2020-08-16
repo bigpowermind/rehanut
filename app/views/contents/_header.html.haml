@@ -7,33 +7,32 @@
       %ul.nav-lists 
         %li RehaNutについて
         %li メニュー
-        %li.nav-lists__userName
-          = current_user.name
-        %li アクセス
-        %li.nav-lists__Icon
+        %li.nav-lists__Username
           = link_to edit_user_path(current_user) do
-            = icon("fas", "cog")
+            = current_user.name
+        %li アクセス
+        
   /ヘッダー画像
   .Header__top
     .Header__top__first-view
       = image_tag "juan-pablo-rodriguez-X6jtULYJQz8-unsplash.jpg", alt: "トップ画面", class:"top-image"
-      %p.Header__top__first__view__text 
-        いつでもどこでも
-        %br
-        誰でも何度でも、
-        %br
-        リハビリテーションと栄養を！
-      = image_tag "edgar-chaparro-5a5BoMAyJeU-unsplash.jpg", alt: "トップ画面", class:"top-image"
-      %p.Header__top__first__view__text 
-        いつでもどこでも
-        %br
-        誰でも何度でも、
-        %br
-        リハビリテーションと栄養を！
-      = image_tag "dan-gold-4_jhDO54BYg-unsplash.jpg", alt: "トップ画面", class:"top-image"
-      %p.Header__top__first__view__text 
-        いつでもどこでも
-        %br
-        誰でも何度でも、
-        %br
-        リハビリテーションと栄養を！
+      -# %p.Header__top__first-view__text 
+      -#   いつでもどこでも
+      -#   %br
+      -#   誰でも何度でも、
+      -#   %br
+      -#   リハビリテーションと栄養を！
+      = image_tag "ekaterina-shakharova-L4nwL3195U0-unsplash.jpg", alt: "トップ画面", class:"top-image"
+      -# %p.Header__top__first__view__text 
+      -#   いつでもどこでも
+      -#   %br
+      -#   誰でも何度でも、
+      -#   %br
+      -#   リハビリテーションと栄養を！
+      = image_tag "brooke-lark-jUPOXXRNdcA-unsplash.jpg", alt: "トップ画面", class:"top-image"
+      -# %p.Header__top__first__view__text 
+      -#   いつでもどこでも
+      -#   %br
+      -#   誰でも何度でも、
+      -#   %br
+      -#   リハビリテーションと栄養を！

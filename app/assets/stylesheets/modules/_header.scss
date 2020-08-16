@@ -24,9 +24,8 @@
   &__top {
     background-color: white;
     &__first-view {
-      height: 60vh;
       position: relative;
-      p {
+      &__text {
         position: absolute;
         color: white;
         font-size: 3rem;
@@ -34,6 +33,9 @@
         top: 50px;
         left: 50px;
       }
+    }
+    .top-image {
+      height: 60vh;
     }
   }
 }
