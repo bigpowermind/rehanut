@@ -1,16 +1,43 @@
 .Main
+  /ヘッダー画像
+  .Main__top
+    %h1 新着コンテンツ
+    .Main__top__first-view
+      = image_tag "juan-pablo-rodriguez-X6jtULYJQz8-unsplash.jpg", alt: "トップ画面", class:"top-image"
+      -# %p.Header__top__first-view__text 
+      -#   いつでもどこでも
+      -#   %br
+      -#   誰でも何度でも、
+      -#   %br
+      -#   リハビリテーションと栄養を！
+      = image_tag "ekaterina-shakharova-L4nwL3195U0-unsplash.jpg", alt: "トップ画面", class:"top-image"
+      -# %p.Header__top__first__view__text 
+      -#   いつでもどこでも
+      -#   %br
+      -#   誰でも何度でも、
+      -#   %br
+      -#   リハビリテーションと栄養を！
+      = image_tag "brooke-lark-jUPOXXRNdcA-unsplash.jpg", alt: "トップ画面", class:"top-image"
+      -# %p.Header__top__first__view__text 
+      -#   いつでもどこでも
+      -#   %br
+      -#   誰でも何度でも、
+      -#   %br
+      -#   リハビリテーションと栄養を！
   /特徴
   .Main__feature 
     .Main__feature__reha
       %h1.Main__feature__reha__message リハビリテーション
-      = image_tag "edgar-chaparro-5a5BoMAyJeU-unsplash.jpg", alt: "健康を支える", class: "reha-image"
+      = link_to image_tag("edgar-chaparro-5a5BoMAyJeU-unsplash.jpg", alt: "健康を支える", class: "reha-image"), content_path(current_user)
       %p.Main__feature__reha__explanation
       いつでもどこでも誰でも何度でもリハビリテーションが受けられる環境を提供します。
+      
+         
 
 
     .Main__fearute__nut
-      %h1.Main__feature__nut__message　栄養
-      = image_tag "dan-gold-4_jhDO54BYg-unsplash.jpg", alt: "あなたにあった栄養を", class: "nut-image"
+      %h1.Main__feature__nut__message 栄養
+      = link_to image_tag("dan-gold-4_jhDO54BYg-unsplash.jpg", alt: "あなたにあった栄養を", class: "nut-image"), content_path(current_user)
       %p.Main__fearute__nut__explanation
       あなたに合った栄養摂取の方法を提案します。
 

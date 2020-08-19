@@ -1,6 +1,23 @@
 .Main {
-  height: 100vh;
+  height: calc(100% - 270px);
   background-color: white;
+  &__top {
+    background-color: white;
+    &__first-view {
+      position: relative;
+      &__text {
+        position: absolute;
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        top: 50px;
+        left: 50px;
+      }
+    }
+    .top-image {
+      height: 50vh;
+    }
+  }
   &__feature {
     color: black;
     display: flex;
@@ -19,7 +36,7 @@
     }
   }
     img {
-      height: 100%;
-      width: 90%;
+      height: 40vh;
+      width: 40vh;
     }
 }

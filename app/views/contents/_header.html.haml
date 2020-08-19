@@ -2,7 +2,8 @@
   /インフォメーション
   .Header__info
     .Header__info__title 
-      %h1.main-title RehaNut
+      .main-title
+        = link_to "RehaNut", root_path
     .Header__info__navbar
       %ul.nav-lists 
         %li RehaNutについて
@@ -10,28 +11,3 @@
         %li.nav-lists__Username
           = link_to edit_user_path(current_user) do
             = current_user.name
-        
-  /ヘッダー画像
-  .Header__top
-    .Header__top__first-view
-      = image_tag "juan-pablo-rodriguez-X6jtULYJQz8-unsplash.jpg", alt: "トップ画面", class:"top-image"
-      -# %p.Header__top__first-view__text 
-      -#   いつでもどこでも
-      -#   %br
-      -#   誰でも何度でも、
-      -#   %br
-      -#   リハビリテーションと栄養を！
-      = image_tag "ekaterina-shakharova-L4nwL3195U0-unsplash.jpg", alt: "トップ画面", class:"top-image"
-      -# %p.Header__top__first__view__text 
-      -#   いつでもどこでも
-      -#   %br
-      -#   誰でも何度でも、
-      -#   %br
-      -#   リハビリテーションと栄養を！
-      = image_tag "brooke-lark-jUPOXXRNdcA-unsplash.jpg", alt: "トップ画面", class:"top-image"
-      -# %p.Header__top__first__view__text 
-      -#   いつでもどこでも
-      -#   %br
-      -#   誰でも何度でも、
-      -#   %br
-      -#   リハビリテーションと栄養を！

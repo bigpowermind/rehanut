@@ -25,14 +25,14 @@ Things you may want to cover:
 
 # rehanut DB設計
 
-##　contentsテーブル（コンテンツ機能）
+##  contentsテーブル（コンテンツ機能）
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
 |image|string||
 |video|string||
 ### contents-Association
-- has_many :users
+- belongs_to :users
 - has_many :comments
 
 ## usersテーブル（ユーザー管理機能）
