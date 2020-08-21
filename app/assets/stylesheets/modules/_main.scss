@@ -21,6 +21,7 @@
   &__feature {
     color: black;
     display: flex;
+    justify-content: space-around;
     &__reha {
       margin-right: 20px;
       &__message {
@@ -35,8 +36,4 @@
       }
     }
   }
-    img {
-      height: 40vh;
-      width: 40vh;
-    }
 }
