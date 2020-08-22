@@ -1,9 +1,8 @@
-= render "header";
+.Base
+  = render "header";
 
-.Content
-  %h1 本日のトレーニングメニューはこちらです。
-  %p aiueo
-  - @contents.each do |content|
-    = image_tag content.image, class: "image"
+  .Content
+    %h1 本日のトレーニングメニューはこちらです。
+    = image_tag @contents.image
 
 = render "footer";

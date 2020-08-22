@@ -27,17 +27,16 @@
   /特徴
   .Main__feature 
     .Main__feature__reha
-      %h1.Main__feature__reha__message リハビリテーション
+      %h1.Main__feature__reha__message トレーニング
       = link_to image_tag("edgar-chaparro-5a5BoMAyJeU-unsplash.jpg", alt: "健康を支える", class: "reha-image"), content_path(current_user)
-      %p.Main__feature__reha__explanation
-      いつでもどこでも誰でも何度でもリハビリテーションが受けられる環境を提供します。
+      %p.Main__feature__reha__explanation いつでもどこでも誰でも何度でもリハビリテーションが受けられる環境を提供します。
       
          
 
 
     .Main__fearute__nut
       %h1.Main__feature__nut__message 栄養
-      = link_to image_tag("dan-gold-4_jhDO54BYg-unsplash.jpg", alt: "あなたにあった栄養を", class: "nut-image"), content_path(current_user)
+      = link_to image_tag("dan-gold-4_jhDO54BYg-unsplash.jpg", alt: "あなたにあった栄養を", class: "nut-image"), nut_content_path(current_user)
       %p.Main__fearute__nut__explanation
       あなたに合った栄養摂取の方法を提案します。
 

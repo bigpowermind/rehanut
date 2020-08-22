@@ -3,5 +3,9 @@ Rails.application.routes.draw do
 
   root "contents#index"
   resources :users, only: [:edit, :update]
-  resources :contents, only: [:index, :show]
+  resources :contents, only: [:index, :show] do
+    member do
+      get "nut"
+    end
+  end
 end

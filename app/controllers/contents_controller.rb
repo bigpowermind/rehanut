@@ -4,6 +4,10 @@ class ContentsController < ApplicationController
   end
 
   def show
+    @contents = Content.find(2)
+  end
+
+  def nut
     @contents = Content.all
   end
 end
