@@ -3,6 +3,18 @@
 
   .Content
     %h1 本日のトレーニングメニュー
-    = image_tag @contents.image
-
+    = image_tag @contents.image, class: "reha"
+    %h1 達成状況（CheckBox)
+    %h1 本日のトレーニングに対するコメント
+  .Comment-list
+    = render @comments
+  .Comment
+    = form_with model: [@contents, @comment], html: {class: "Form"}, local: true do |f|
+      .Form__contents
+        = f.text_field :content, class: 'Form__contents__text', placeholder: 'type a message'
+        = f.label :image, class: 'Form__contents__image' do
+          = icon('far', 'image')
+          = f.file_field :image, class: 'Form__contents__image__file'
+      = f.submit 'Send', class: 'submit-btn'
+    
 = render "footer";

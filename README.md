@@ -48,7 +48,8 @@ Things you may want to cover:
 ## commentsテーブル（コメント機能）
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null :false|
+|comment|string|
+|image|string|
 |user_id|integer|null :false, foreign_key: true|
 ### comments-Association
 - belongs_to :user
