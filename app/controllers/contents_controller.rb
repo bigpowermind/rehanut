@@ -10,6 +10,9 @@ class ContentsController < ApplicationController
     @comments = @contents.comments.includes(:user)
   end
 
+  
+  
+
   def nut
     @contents = Content.all
   end

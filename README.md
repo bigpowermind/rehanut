@@ -54,3 +54,12 @@ Things you may want to cover:
 ### comments-Association
 - belongs_to :user
 - belongs_to :content
+
+## contents_usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|content_id|integer|null: false, foreign_key: true|
+### contents_users-Association
+- belongs_to: user
+- belongs_to: content
