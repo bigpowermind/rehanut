@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_24_192116) do
+ActiveRecord::Schema.define(version: 2020_10_06_194912) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "comment"
@@ -22,12 +22,22 @@ ActiveRecord::Schema.define(version: 2020_08_24_192116) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
+  create_table "content_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "content_id"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["content_id"], name: "index_content_users_on_content_id"
+    t.index ["user_id"], name: "index_content_users_on_user_id"
+  end
+
   create_table "contents", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "text"
     t.string "image"
     t.string "video"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -45,4 +55,6 @@ ActiveRecord::Schema.define(version: 2020_08_24_192116) do
 
   add_foreign_key "comments", "contents"
   add_foreign_key "comments", "users"
+  add_foreign_key "content_users", "contents"
+  add_foreign_key "content_users", "users"
 end
