@@ -1,5 +1,5 @@
 class ContentsController < ApplicationController
-  #before_action :set_group, only: :show
+  # before_action :set_group, only: :show
 
   def index
     @contents = Content.all
