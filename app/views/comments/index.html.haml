@@ -1,0 +1,33 @@
+.Base
+  = render "comments-header";
+
+  .Content
+    %h1 本日のトレーニングメニュー
+    //= image_tag @contents.image, class: "training"
+    %h1 達成状況（CheckBox)
+    %h1 本日のトレーニングに対するコメント
+    -# .Content_field
+    -#   /= render @comments
+  
+  .Catalog
+    %h4 コメント一覧
+    - if @comments
+      - @comments.each do |comment|
+        %p
+          = link_to comment.user.name, "/users/#{comment.user_id}"
+          = comment.comment
+          = image_tag comment.image.url, class: 'Comment__image' if comment.image.present?
+
+  
+  .Comment
+    = form_with model: [@content, @comment], html: {class: "Form"}, local: true do |f|
+      .Form__contents
+        = f.text_field :comment, class: 'Form__contents__text', placeholder: 'type a message'
+        = f.label :image, class: 'Form__contents__image' do
+          = icon('far', 'image')
+          = f.file_field :image, class: 'Form__contents__image__file'
+      = f.submit 'Send', class: 'submit-btn'
+
+  
+    
+= render "comments-footer";

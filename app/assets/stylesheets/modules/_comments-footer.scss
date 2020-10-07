@@ -1,0 +1,29 @@
+.Footer {
+  height: 200px;
+  color: white;
+  &__inner {
+    height: 100px;
+    background-color: #212121;
+    &__category {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 40px;
+    }
+  }
+
+  &__nav {
+    height: 100px;
+    background-color: black;
+    &__information {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 12px;
+      padding-top: 50px;
+      &--list {
+        margin-right: 20px;
+      }
+    }
+  }
+}

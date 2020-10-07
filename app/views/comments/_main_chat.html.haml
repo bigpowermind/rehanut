@@ -1,0 +1,8 @@
+.Comment
+    = form_with model: [@content, @comment], html: {class: "Form"}, local: true do |f|
+      .Form__contents
+        = f.text_field :comment, class: 'Form__contents__text', placeholder: 'type a message'
+        = f.label :image, class: 'Form__contents__image' do
+          = icon('far', 'image')
+          = f.file_field :image, class: 'Form__contents__image__file'
+      = f.submit 'Send', class: 'submit-btn'
