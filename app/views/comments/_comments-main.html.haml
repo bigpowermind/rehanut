@@ -3,11 +3,7 @@
     //= image_tag @contents.image, class: "training"
     %h1 達成状況（CheckBox)
     %h1 本日のトレーニングに対するコメント
-    -# .Content_field
-    -#   /= render @comments
-  
   .Catalog
-    %h4 コメント一覧
     - if @comments
       - @comments.each do |comment|
         %p
