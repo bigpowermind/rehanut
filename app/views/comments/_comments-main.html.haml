@@ -1,7 +1,6 @@
 .Content
     %h1 本日のトレーニングメニュー
     //= image_tag @contents.image, class: "training"
-    %h1 達成状況（CheckBox)
     %h1 本日のトレーニングに対するコメント
   .Catalog
     - if @comments
@@ -15,8 +14,8 @@
   .Comment
     = form_with model: [@content, @comment], html: {class: "Form"}, local: true do |f|
       .Form__contents
-        = f.text_field :comment, class: 'Form__contents__text', placeholder: 'type a message'
+        = f.text_field :comment, class: 'Form__contents__text', placeholder: 'コメントを入力
         = f.label :image, class: 'Form__contents__image' do
           = icon('far', 'image')
           = f.file_field :image, class: 'Form__contents__image__file'
-      = f.submit 'Send', class: 'submit-btn'
+      = f.submit '送信', class: 'submit-btn'
