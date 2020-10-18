@@ -19,9 +19,9 @@
 
   
   .Comment
-    = form_with model: [@content, @comment], html: {class: "Form"}, local: true do |f|
+    = form_with model: [@content, @comment], html: {class: "Form"}, local: true, id: "new_comment" do |f|
       .Form__contents
-        = f.text_field :comment, class: 'Form__contents__text', placeholder: 'コメントを入力'
+        = f.text_field :comment, class: 'Form__contents__text', placeholder: 'コメントを入力', rows: 2
         = f.label :image, class: 'Form__contents__image' do
           = icon('far', 'image')
           = f.file_field :image, class: 'Form__contents__image__file'
