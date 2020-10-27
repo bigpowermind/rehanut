@@ -1,27 +1,29 @@
 .Base
-  = render "comments-header";
+  .Header
+  /インフォメーション
+  .Header__info
+    .Header__info__title 
+      .main-title
+        = link_to "RehaNut", root_path
+    .Header__info__navbar
+      %ul.nav-lists 
+        %li RehaNutについて
+        %li メニュー
+        %li.nav-lists__Username
+          = link_to edit_user_path(current_user) do
+            = current_user.name
 
   .Content
     %h1 本日のトレーニングメニュー
     //= image_tag @contents.image, class: "training"
     %h1 本日のトレーニングに対するコメント
-    -# .Content_field
-    -#   /= render @comments
-  
-  .Catalog
-    %h4 コメント一覧
-    - if @comments
-      - @comments.each do |comment|
-        %p
-          = link_to comment.user.name, "/users/#{comment.user_id}"
-          = comment.comment
-          = image_tag comment.image.url, class: 'Comment__image' if comment.image.present?
-
+    .Content__field
+      = render @comments
   
   .Comment
-    = form_with model: [@content, @comment], html: {class: "Form"}, local: true, id: "new_comment" do |f|
+    = form_with model: [@content, @comment], html: {class: "Form"}, local: true do |f|
       .Form__contents
-        = f.text_field :comment, class: 'Form__contents__text', placeholder: 'コメントを入力', rows: 2
+        = f.text_field :comment, class: 'Form__contents__text', placeholder: 'コメントを入力'
         = f.label :image, class: 'Form__contents__image' do
           = icon('far', 'image')
           = f.file_field :image, class: 'Form__contents__image__file'
@@ -29,4 +31,17 @@
 
   
     
-= render "comments-footer";
+  .Footer
+    .Footer__inner
+      %ul.Footer__inner__category
+        %li ホーム
+        %li 利用規約
+        %li FAQ
+        %li お問い合わせ
+        %li アクセス
+  
+    .Footer__nav
+      %ul.Footer__nav__information
+        %li.Footer__nav__information--list 運営会社
+        %li.Footer__nav__information--list 個人情報保護方針
+        %li.Footer__nav__information--list Copyright © 2020 RehaNut Inc. All rights reserved.
