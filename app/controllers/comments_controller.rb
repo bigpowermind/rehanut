@@ -8,8 +8,11 @@ class CommentsController < ApplicationController
 
   def create
     @comment = @content.comments.new(comment_params)
-    if @comment.save!
-      redirect_to content_comments_path(@content), notice: "メッセージが送信されました"
+    if @comment.save
+      respond_to do |format|
+        format.html {redirect_to content_comments_path, notice: "メッセージが送信されました"}
+        format.json #{render json: @comment}
+      end
     else
       @comments = @content.comments.includes(:user)
       flash.now[:alert] = "メッセージを入力してください。"
