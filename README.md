@@ -35,7 +35,7 @@
 deviseを用いたログイン機能
 
 ## コメント機能
-ajaxを用いた非同期通信によるコメント送信機能
+非同期通信によるコメント送信機能
 
 # 本番環境
 URL: https://rehanut.herokuapp.com/
