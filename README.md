@@ -26,8 +26,8 @@
 そこで、自宅でもリハビリテーション・トレーニングを継続したいという高齢者向けのサービスがあれば良いと思い制作に至りました。
 
 # 開発状況
-開 発 環 境：Ruby/Ruby on Rails/MySQL/Github/heroku/Visual Studio Code/haml&Scss
-開 発 期 間：約3週間
+開 発 環 境：Ruby/Ruby on Rails/MySQL/Github/heroku/Visual Studio Code/haml&Scss  
+開 発 期 間：約3週間  
 平均作業時間：約2時間
 
 # 開発した機能
