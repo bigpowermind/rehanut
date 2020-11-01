@@ -3,8 +3,8 @@
 # 概要
 
 ## アプリ名: RehaNut(リハニュート）  
-![トップページ](app/assets/images/README用の画像.jpg)  
-![トップページ](app/assets/images/README用の画像2.jpg)
+![トップページ](app/assets/images/README用の画像1.jpg)  
+![トップページ2](app/assets/images/README用の画像2.jpg)
 いつでもどこでも誰でも何度でもリハビリテーションを提供。  
 高齢者向け、在宅で行えるリハビリテーションアプリケーション。  
 一人一人にあった栄養に関する情報提供、栄養摂取方法を提案。
