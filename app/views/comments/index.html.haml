@@ -15,7 +15,6 @@
 
   .Content
     %h1 本日のトレーニングメニュー
-    //= image_tag @contents.image, class: "training"
     %h1 本日のトレーニングに対するコメント
     .Content__field
       = render @comments
@@ -28,8 +27,6 @@
           = icon('far', 'image')
           = f.file_field :image, class: 'Form__contents__image__file'
       = f.submit '送信', class: 'submit-btn'
-
-  
     
   .Footer
     .Footer__inner
