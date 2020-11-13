@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
     if @comment.save
       respond_to do |format|
         format.html {redirect_to content_comments_path, notice: "メッセージが送信されました"}
-        format.json #{render json: @comment}
+        format.json
       end
     else
       @comments = @content.comments.includes(:user)
