@@ -1,4 +1,3 @@
-# jbuilderファイルでは基本的にjson.KEY VALUEという形で記載できる。こうすることでJavaScriptファイルに返ってきたデータをjbuilderで定義したキーとバリューの形で呼び出して使える。
 json.comment @comment.comment
 json.image @comment.image_url
 json.user_name @comment.user.name
