@@ -45,8 +45,8 @@ deviseというgemを用いたログイン機能
 # 本番環境
 URL: https://rehanut.herokuapp.com/  
 
-■テスト用アカウント
-・メールアドレス： sample1@sample.com
+■テスト用アカウント  
+・メールアドレス： sample1@sample.com  
 ・パスワード： sample1
 
 # 動作確認方法
