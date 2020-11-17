@@ -35,10 +35,12 @@
 
 # 開発した機能
 ## ユーザーログイン機能
-deviseを用いたログイン機能
+deviseというgemを用いたログイン機能
 
 ## コメント機能
-非同期通信によるコメント送信機能
+・非同期通信によるコメント送信機能  
+・carrierwaveというgemを用いた画像投稿機能  
+・fog-awsというgemを用いてAWS(S3)への画像の保存
 
 # 本番環境
 URL: https://rehanut.herokuapp.com/
