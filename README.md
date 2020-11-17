@@ -7,7 +7,7 @@
 高齢者向け、在宅で行えるリハビリテーションアプリケーション。  
 一人一人にあった栄養に関する情報提供、栄養摂取方法を提案。  
 
-![トップページ](app/assets/images/README用の画像3.jpg)  
+![トップページ](app/assets/images/README用の画像4.jpg)  
 ![トップページ2](app/assets/images/README用の画像2.jpg)
 
 ## 誰のどんな問題を解決するのか（制作した経緯）
