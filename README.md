@@ -43,7 +43,11 @@ deviseというgemを用いたログイン機能
 ・fog-awsというgemを用いてAWS(S3)への画像の保存
 
 # 本番環境
-URL: https://rehanut.herokuapp.com/
+URL: https://rehanut.herokuapp.com/  
+
+■テスト用アカウント
+・メールアドレス： sample1@sample.com
+・パスワード： sample1
 
 # 動作確認方法
 Chromeの最新版を利用してアクセスしてください。ただしデプロイ等で接続できないタイミングもございます。  
