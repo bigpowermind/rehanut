@@ -54,7 +54,8 @@ Chromeの最新版を利用してアクセスしてください。ただしデ�
 その際は少し時間をおいてから接続ください。
 
 # DEMO
-![13d4dd56fb102b245a6dd1c49f41146d (1)](https://user-images.githubusercontent.com/61393547/99580693-1b967800-2a23-11eb-8f24-cb6fc6d5eaa4.gif)
+![59f321b358e84460403972303f4bd1b8](https://user-images.githubusercontent.com/61393547/99581638-65cc2900-2a24-11eb-898d-e2430eaeaae8.gif)
+![b18f7f26bb321ad8e4fdcb31c1ea3ed5](https://user-images.githubusercontent.com/61393547/99581747-85635180-2a24-11eb-9a95-30fdbb59efba.gif)
 
 
 # 課題や今後実装したい機能
