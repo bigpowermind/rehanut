@@ -42,7 +42,6 @@ $(function() {
       return html;
     };
   };
-    
   // form要素を取得してonメソッドを使用
   $('.Form').on('submit', function(e) {
     // preventDefault()でデフォルトのイベントを止める(同期通信を止める)
